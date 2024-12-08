@@ -51,10 +51,10 @@
  */
 typedef struct
 {
-	__vo uint32_t CRL;   /* Port configuration register low				Address offset: 0x00*/
+	__vo uint32_t CRL;  	 /* Port configuration register low				Address offset: 0x00*/
 	__vo uint32_t CRH;	 /* Port configuration register high			Address offset: 0x04*/
 	__vo uint32_t IDR;	 /* Port input data register					Address offset: 0x08*/
-	__vo uint32_t ODR;   /* Port output data register 					Address offset: 0x0C*/
+	__vo uint32_t ODR;   	 /* Port output data register 					Address offset: 0x0C*/
 	__vo uint32_t BSRR;	 /* Port bit set/reset register 		    	Address offset: 0x10*/
 	__vo uint32_t BRR;	 /* Port bit reset register				        Address offset: 0x14*/
 	__vo uint32_t LCKR;	 /* Port configuration lock register			Address offset: 0x18*/
@@ -80,21 +80,21 @@ typedef struct
  */
 typedef struct
 {
-	__vo uint32_t IMR;        /* Interrupt mask register 					Address offset: 0x00 	*/
-	__vo uint32_t EMR;		  /* Event mask register        				Address offset: 0x04  	*/
-	__vo uint32_t RTSR ;	  /* Rising trigger selection register			Address offset: 0x08	*/
-	__vo uint32_t FTSR;	      /* Falling trigger selection register 		Address offset: 0x0C	*/
-	__vo uint32_t SWIER;	  /* Software interrupt event register			Address offset: 0x10	*/
-	__vo uint32_t PR;	      /* Pending register							Address offset: 0x14	*/
+	__vo uint32_t IMR;        	 /* Interrupt mask register 					Address offset: 0x00 	*/
+	__vo uint32_t EMR;		 /* Event mask register        				Address offset: 0x04  	*/
+	__vo uint32_t RTSR ;	         /* Rising trigger selection register			Address offset: 0x08	*/
+	__vo uint32_t FTSR;	     	 /* Falling trigger selection register 		Address offset: 0x0C	*/
+	__vo uint32_t SWIER;	  	 /* Software interrupt event register			Address offset: 0x10	*/
+	__vo uint32_t PR;	         /* Pending register							Address offset: 0x14	*/
 
 
 }EXTI_RegDef_t;
 typedef struct
 {
 	__vo uint32_t AFIO_EVCR;        /* Event control register								Address offset: 0x00 	*/
-	__vo uint32_t AFIO_MAPR;		/* AF remap and debug I/O configuration register        Address offset: 0x04  	*/
+	__vo uint32_t AFIO_MAPR;	/* AF remap and debug I/O configuration register        Address offset: 0x04  	*/
 	__vo uint32_t AFIO_EXTICR[3];	/* External interrupt configuration register [1-4]	    Address offset: 0x08-0x014	*/
-	__vo uint32_t AFIO_MAPR2;		/* AF remap and debug I/O configuration register2		Address offset 	0x1C	*/
+	__vo uint32_t AFIO_MAPR2;	/* AF remap and debug I/O configuration register2		Address offset 	0x1C	*/
 
 }AFIO_RegDef_t;
 
